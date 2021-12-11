@@ -21,9 +21,11 @@ refs.clouse.addEventListener('click', onClouseClick)
 function onSubmitClick (e) {
     console.log( refs.reclama.classList == "none")
     refs.reclama.classList.remove( 'none' )
+    e.target.classList.add('click')
     if (refs.reclama.classList !== "none") {
     setTimeout( () => {
-    refs.reclama.classList.add('none')
+        refs.reclama.classList.add( 'none' )
+        e.target.classList.remove('click')
 }, 3000)
 }
 }
