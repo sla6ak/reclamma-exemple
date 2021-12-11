@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: rgb(227, 177, 247);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.header{
+    min-height: 50px;
+    width: 100%;
+    padding: 5px 40px;
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.hello{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sabmit{
+    margin-top: 20px;
+    background-color: rgb(30, 255, 0);
+    padding: 10px;
+}
+.footer{
+    min-height: 50px;
+    background-color: brown;
+    padding: 5px 30px;
+}
+.js-reklama{
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(30, 255, 0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
+    transition-duration: 500ms;
+}
+.clouse{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(201, 250, 160);
+}
+.none{
+    /* display: none; */
+    opacity: 0;
+    transform: translateX(200%);
+}
